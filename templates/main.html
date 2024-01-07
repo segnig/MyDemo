@@ -1,0 +1,26 @@
+<!DOCSTYPE html>
+<html lang="en">
+    <haed>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>MyDemo</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        {% include 'navbar.html' %}
+
+        {% if messages %}
+            <ul class="message">
+                {% for message in messages %}
+                    <li></li>{{ message }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+
+        {% block content %}
+
+
+        {% endblock %}
+    </body>
+
+</html>
